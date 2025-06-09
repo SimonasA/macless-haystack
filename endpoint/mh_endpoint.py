@@ -78,7 +78,7 @@ class ServerHandler(BaseHTTPRequestHandler):
 
         post_body = self.rfile.read(content_len)
 
-        logger.debug('Getting with post: ' + str(post_body))
+        logger.debug('Getting with post222: ' + str(post_body))
         body = json.loads(post_body)
         if "days" in body:
             days = body['days']
